@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class DeviceModifyParam extends BaseParam<BaseResponse> {
-    private String dev_name;
+    private String devName;
     private String vn;
     private String ver;
     private String logoType;

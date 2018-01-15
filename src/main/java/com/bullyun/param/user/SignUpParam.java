@@ -12,11 +12,12 @@ public class SignUpParam extends BaseParam<BaseResponse> {
     private String username;
     private String password;
     private String email;
-    private String country_code;
+    private String countryCode;
     private String phone;
     private String captcha;
     private String locale;
     private String valid;
+
     @Override
     public String getApi() {
         return "/api/v1/users/signup";

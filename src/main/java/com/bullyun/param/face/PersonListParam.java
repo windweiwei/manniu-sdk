@@ -1,17 +1,19 @@
 package com.bullyun.param.face;
 
 import com.bullyun.param.BaseParam;
-import com.bullyun.response.facedto.GroupListResponse;
+import com.bullyun.response.facedto.PersonListResponse;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
-public class GroupListParam extends BaseParam<GroupListResponse> {
+@EqualsAndHashCode(callSuper = true)
+public class PersonListParam extends BaseParam<PersonListResponse> {
     private String accessToken;
     private String groupId;
     private Integer type;
 
     @Override
     public String getApi() {
-        return "/api/v1/group/list";
+        return "/api/v1/person/list";
     }
 }

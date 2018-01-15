@@ -1,4 +1,4 @@
-package com.bullyun.param.Favorite;
+package com.bullyun.param.favorite;
 
 import com.bullyun.param.BaseParam;
 import com.bullyun.response.favoritedto.FavoriteGetResponse;

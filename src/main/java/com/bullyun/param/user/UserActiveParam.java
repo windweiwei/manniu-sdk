@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 public class UserActiveParam extends BaseParam<BaseResponse> {
     private String email;
     private String phone;
-    private String active_code;
+    private String activeCode;
 
 
     @Override

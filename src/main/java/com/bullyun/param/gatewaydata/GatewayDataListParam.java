@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class GatewayDataListParam extends BaseParam<GatewayDataListResponse> {
-    private String access_token;
+    private String accessToken;
     private String gatewaySn;
     private Integer sensorid;
     private Long startTime;
@@ -17,6 +17,7 @@ public class GatewayDataListParam extends BaseParam<GatewayDataListResponse> {
     private Integer status;
     private Integer pageStart;
     private Integer pageSize;
+
     @Override
     public String getApi() {
         return "/api/v1/gatewayData/list";

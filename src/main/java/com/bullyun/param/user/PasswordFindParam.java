@@ -12,6 +12,7 @@ public class PasswordFindParam extends BaseParam<SignInResponse> {
     private String countryCode;
     private String phone;
     private String captcha;
+
     @Override
     public String getApi() {
         return "/api/v1/users/password/find";

@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class PasswordResetParam extends BaseParam<SignInResponse> {
     private String username;
-    private String active_code;
+    private String activeCode;
     private String password;
 
     @Override

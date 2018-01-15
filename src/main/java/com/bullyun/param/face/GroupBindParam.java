@@ -1,4 +1,5 @@
-package com.bullyun.param.push;
+package com.bullyun.param.face;
+
 
 import com.bullyun.param.BaseParam;
 import com.bullyun.response.BaseResponse;
@@ -7,12 +8,12 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class PushUnregisterParam extends BaseParam<BaseResponse> {
+public class GroupBindParam extends BaseParam<BaseResponse> {
     private String accessToken;
-    private String pushToken;
+    private String groupId;
 
     @Override
     public String getApi() {
-        return "/api/v1/push/unregister";
+        return "/api/v1/ device/group";
     }
 }
